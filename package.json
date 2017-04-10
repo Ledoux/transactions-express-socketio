@@ -14,7 +14,9 @@
   "dependencies": {
     "body-parser": "^1.15.2",
     "express": "^4.14.0",
+    "redux": "^3.5.2",
     "socket.io": "^1.7.3",
+    "transactions-redux-normalizer": "latest",
     "transactions-tests": "latest"
   },
   "description": "An express framework for implementing a redux app state mutable with websockets transactions",
