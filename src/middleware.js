@@ -30,7 +30,7 @@ export function useTransactionsExpressSocketio (server, config = {}) {
       console.log('client disconnected')
     })
     socket.on('connect_user', user => {
-      store.dispatch(mergeNormalizerEntity('users', user))
+      store.dispatch(mergeNormalizerEntity('users', user.id, user))
     })
     socket.on('disconnect_user', userId => {
       store.dispatch(deleteNormalizerEntity('users', userId))
