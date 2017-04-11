@@ -38,5 +38,5 @@
     "dev": "concurrently \"npm run dev-watch\"",
     "dev-watch": "nodemon --watch src --exec \"npm run compile\""
   },
-  "version": "0.0.2"
+  "version": "0.0.3"
 }
