@@ -13,11 +13,11 @@ import { createReducer,
 
 export function useTransactionsExpressSocketio (server, config = {}) {
   // unpack
+  const definition = config.definition
   const description = config.description || {}
   const NAME_SPACE = config.NAME_SPACE || '/transactions'
   // redux store
-  const appSchema = createAppSchema(description)
-  const normalizer = createReducer({ schema: appSchema })
+  const normalizer = createReducer(description, { definition })
   const rootReducer = combineReducers({ normalizer })
   const store = createStore(rootReducer)
   // socketio

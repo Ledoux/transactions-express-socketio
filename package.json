@@ -16,15 +16,16 @@
     "express": "^4.14.0",
     "redux": "^3.5.2",
     "socket.io": "^1.7.3",
+    "transactions-description-definition": "latest",
     "transactions-redux-normalizer": "latest",
     "transactions-tests": "latest"
   },
   "description": "An express framework for implementing a redux app state mutable with websockets transactions",
   "devDependencies": {
     "ava": "^0.18.2",
-    "babel-cli": "^6.24.0",
+    "babel-cli": "^6.24.1",
     "babel-polyfill": "^6.23.0",
-    "babel-preset-latest": "^6.24.0",
+    "babel-preset-latest": "^6.24.1",
     "concurrently": "^3.1.0",
     "nodemon": "^1.11.0"
   },
@@ -39,5 +40,5 @@
     "dev": "concurrently \"npm run dev-watch\"",
     "dev-watch": "nodemon --watch src --exec \"npm run compile\""
   },
-  "version": "0.0.3"
+  "version": "0.0.4"
 }
