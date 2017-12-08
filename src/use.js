@@ -4,7 +4,6 @@ import { combineReducers,
   createStore
 } from 'redux'
 import { createReducer,
-  createAppSchema,
   deleteNormalizerEntities,
   deleteNormalizerEntity,
   mergeNormalizerEntities,
